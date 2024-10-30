@@ -12,6 +12,7 @@ contract PasswordStore {
 
     address private s_owner;
     string private s_password;
+    // @audit  s_password is not actually private, people can still see it on the blockchain
 
     event SetNetPassword();
 
